@@ -1,54 +1,66 @@
-baseURL = "https://example.com"
-title = "Your Website Title"
+baseURL = "https://www.cs.utexas.edu/"
+title = "Yi-Jen(Ian) Shih"
 languageCode = "en-us"
 theme = "devise"
 relativeURLs = true
 enableEmoji = true
 googleAnalytics = ""
 enableRobotsTXT = true
-copyright = "&copy; Copyright Year, Your Name"
+copyright = "&copy; Copyright 2023, Ian Shih"
 
 # Main menu items
 [menu]
+  #[[menu.main]]
+  #  identifier = "about"
+  #  name = "About"
+  #  title = "About"
+  # url = "/about/"
+  #  weight = -110
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    title = "About"
-    url = "/about/"
+    identifier = "blog"
+    name = "Blog"
+    title = "Blog"
+    url = "https://atosystem.github.io"
     weight = -110
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    title = "Posts"
-    url = "/post/"
-    weight = -100
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    title = "Categories"
-    url = "/categories/"
-    weight = -90
+  #[[menu.main]]
+  #  identifier = "posts"
+  #  name = "Posts"
+  #  title = "Posts"
+  #  url = "/post/"
+  #  weight = -100
+  # [[menu.main]]
+  #   identifier = "categories"
+  #   name = "Categories"
+  #  title = "Categories"
+  #  url = "/categories/"
+  #  weight = -90
 
 # Configuration Features
 [params]
-  description = "Your meta description"      # Your meta description of the site
-  header_title = "Your Name"                 # Your header title
-  header_subtitle = "Your Creative Subtitle" # Your header subtitle
-  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
+  description = "Researcher"      # Your meta description of the site
+  header_title = "Yi-Jen(Ian) Shih"                 # Your header title
+  header_subtitle = "UT Austin CS Ph.D." # Your header subtitle
+  home_image = "/images/avatar_new_small.png"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     fontColor = "#212529"
   [[params.social]]
-    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
-    href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
+    fa_icon = "fab fa-github fa-2x"          # Font Awesome icon class
+    href = "http://github.com/atosystem"      # Link to associate with icon (http://, https://, mailto:)
   [[params.social]]
-    fa_icon = "fab fa-linkedin-in fa-1x"
-    href = ""
+    fa_icon = "fab fa-linkedin-in fa-2x"
+    href = "https://www.linkedin.com/in/ian-shih-77a66218b/"
   [[params.social]]
-    fa_icon = "fab fa-twitter fa-1x"
-    href = ""
+    fa_icon = "fab fa-twitter fa-2x"
+    href = "https://twitter.com/yijenshih"
   [[params.social]]
-    fa_icon = "fas fa-at fa-1x"
-    href = ""
+    fa_icon = "ai ai-google-scholar-square ai-2x"
+    href = "https://scholar.google.com.tw/citations?user=f1feDTMAAAAJ"
+  [[params.social]]
+    fa_icon = "fab fa-instagram fa-2x"
+    href = "https://www.instagram.com/yi_jen_shih/"
+  #[[params.social]]
+  #  fa_icon = "fas fa-at fa-1x"
+  #  href = ""

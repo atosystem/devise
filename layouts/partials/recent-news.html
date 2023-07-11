@@ -1,0 +1,99 @@
+<div class="pl-sm-1 ml-sm-5 pt-2">
+    <p>
+        I'm a First year Ph.D. student at UTCS supervised by Prof. <a href="https://www.cs.utexas.edu/~harwath/index.html"  target="_blank">David Harwath</a>.
+        And my main research focus is Multimodal Speech Processing. Before joining UT, I was supervised by Prof. <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php" target="_blank">Hung-yi Lee</a> from NTU and Prof. <a href="https://affige.github.io" target="_blank">Yi-Hsuan Yang</a> from Academia Sinica.
+    </p>
+    <br/>
+    <div class="alert alert-info">
+        <b>New Paper!</b> M-SpeechCLIP @ ICASSP'23
+      </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="pb-3">
+                <h5><span class="badge badge-info">Recent News</span></h5>
+                <ul class="list-unstyled">
+                        <li>
+                            <span class="text-secondary">Aug 2023</span> Start PhD at UT Austin
+                        </li>
+                        <li>
+                            <span class="text-secondary">June 2022</span> JSALT Workshop
+                        </li>
+                        <li>
+                            <span class="text-secondary">June 1 2022</span>
+                            Graduate from <a href="https://www.ntu.edu.tw/english/" target="_blank">National Taiwan University</a>
+                            <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+                        </li>
+
+                </ul>
+            </div>
+            
+            <div class="pb-3">
+                <h5><span class="badge badge-info">Recent Publications</span> <small><sup>*</sup> indicates equal contribution</small></h5>
+                <ul class="list-unstyled">
+                    {{ range (where .Site.Pages "Section" "publication") }}
+                    {{ range .Pages }}
+                    <li>
+                        <div class="shadow p-3 bg-white rounded">
+                            <span class="text-info">{{.Title}}l</span>
+                            <br/>
+                            <small>
+                                {{.Params.authors | markdownify}}
+                                <br/>
+                                <i>{{.Params.venue}}</i>
+                                <br/>
+                                {{ range .Params.links }}
+                                <a href="{{.ref}}" target="_blank">{{.display}}</a>&nbsp;
+                                {{end}}
+                                <!-- {{ range .Params.links }}
+                                <a>{{.Params.display}}</a>
+                                {{end}} -->
+                            </small>
+                        </div>                            
+                    </li>
+                    <br/>
+                        <!-- {{ .Title }}|{{ .Params.authors }} -->
+                    {{ end }}
+                    {{ end }}
+                        <!-- <li>
+                            <div class="shadow p-3 bg-white rounded">
+                                <span class="text-info">M-SpeechCLIP: Leveraging Large-Scale, Pre-Trained Models for Multilingual Speech to Image Retrieval</span>
+                                <br/>
+                                <small>
+                                    Layne Berry, <b>Yi-Jen Shih</b>, Hsuan-Fu Wang, Heng-Jui Chang, Hung-yi Lee, David Harwath<br/>
+                                    <i>International Conference on Acoustics, Speech, & Signal Processing (ICASSP) 2023</i>
+                                </small>
+                            </div>                            
+                        </li>
+                        <br/> -->
+
+
+                        <!-- <li>
+                            <div class="shadow p-3 bg-white rounded">
+                                <span class="text-info">SpeechCLIP: Integrating Speech with Pre-Trained Vision and Language Model</span>
+                                <br/>
+                                <small>
+                                    <b>Yi-Jen Shih</b>, Hsuan-Fu Wang, Heng-Jui Chang, Layne Berry, Hung-yi Lee, David Harwath
+                                    <br/>
+                                    <i>IEEE Spoken Language Technology Workshop (SLT) 2022</i>
+                                </small>
+                            </div>                            
+                        </li>
+                        <br/>
+                        <li>
+                            <div class="shadow p-3 bg-white rounded">
+                                <span class="text-info">Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer</span>
+                                <br/>
+                                <small>
+                                    <b>Yi-Jen Shih</b>, Shih-Lun Wu, Frank Zalkow, Meinard Müller, Yi-Hsuan Yang
+                                    <br/>
+                                    <i>IEEE Transactions on Multimedia (TMM) 2022</i>
+                                </small>
+                            </div>                            
+                        </li> -->
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>

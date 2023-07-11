@@ -3,7 +3,8 @@ $body-bg: {{ if .Param "style.backgroundColor" }}{{ .Param "style.backgroundColo
 $body-color: {{ if .Param "style.fontColor" }}{{ .Param "style.fontColor"}}{{ else }}#212529{{ end }};
 $home-image-border-color: {{ if .Param "style.homeImageBorderColor" }}{{ .Param "style.homeImageBorderColor"}}{{ else }}#ffffff{{ end }};
 $font-family-base: {{ if .Param "style.fontFamilyBase"}}{{ .Param "style.fontFamilyBase"}},{{end}}"Helvetica Neue", Arial, sans-serif;
-$font-size-base: 0.95rem;
+// $font-size-base: 0.95rem;
+$font-size-base: 1.2rem;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // === Import Font Awesome ===
@@ -18,7 +19,7 @@ $fa-font-path: "../webfonts";
 // === Custom Styles ===
 #content {
   width: 100%;
-  max-width: 650px;
+  // max-width: 950px;
   min-height: calc(100vh - 105px);
 }
 

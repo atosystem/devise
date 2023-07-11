@@ -15,6 +15,10 @@
     {{ $custom := $customTemplate | resources.ExecuteAsTemplate "css/custom.scss" . | toCSS | minify }}
     <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
     {{ end }}
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="academicons-1.9.4/css/academicons.min.css"/>
+
 
     {{ template "_internal/google_analytics.html" . }}
 </head>

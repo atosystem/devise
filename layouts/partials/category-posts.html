@@ -18,6 +18,17 @@
                 </ul>
             </div>
             {{ end }}
+            <div class="pb-3">
+                <h5><span class="badge category">Recentaaa</span></h5>
+                <ul class="list-unstyled">
+                    
+                        <li>
+                            {{ .Date.Format "Jan 2 2006" }}
+                            <a href="a">ccc</a>
+                        </li>
+                    
+                </ul>
+            </div>
 
             {{ range $key, $taxonomy := .Site.Taxonomies.categories.Alphabetical }}
                 <div class="pb-3">
